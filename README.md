@@ -1,9 +1,11 @@
 # focus-heaven
 
-<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/013713c7-fcdb-4dd3-be19-ba0a9e2960d8" />
-
-
 # ☁️ Focus Heaven
+
+
+<img width="2560" height="1440" alt="Ekran görüntüsü 2026-08-21 010741" src="https://github.com/user-attachments/assets/a45f9e9b-f72d-4a8e-828f-b01d8406a273" />
+
+
 
 Focus Heaven is a minimalist, aesthetic Pomodoro and ambient sound application designed to enhance productivity and deep work sessions.
 
