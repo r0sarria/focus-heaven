@@ -293,9 +293,9 @@ function AmbientLayer({ accent }: { accent: string }) {
       <motion.div
         className="absolute inset-0"
         style={{
-          background: `radial-gradient(closest-side at 50% 50%, ${accent}1f, transparent 70%)`,
+          background: `radial-gradient(closest-side at 50% 50%, ${accent}14, transparent 70%)`,
         }}
-        animate={{ opacity: [0.35, 0.6, 0.35] }}
+        animate={{ opacity: [0.15, 0.22, 0.15] }}
         transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
       />
       {motes.map((p) => (
