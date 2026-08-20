@@ -23,7 +23,7 @@ export interface Theme {
   tagline: { tr: string; en: string };
   // Scenic background image (Pexels)
   bgImage: string;
-  // Dark overlay applied on top of the image
+  // Scenic background image (Unsplash)
   overlay: string;
   // Flip card styling
   cardBg: string;
