@@ -6,13 +6,13 @@ const FocusFlipApp = lazy(() => import("../focusflip/App"));
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "FocusFlip — Odaklanma & Flip-Clock Zamanlayıcı" },
+      { title: "Focus Heaven — Odaklanma & Flip-Clock Zamanlayıcı" },
       {
         name: "description",
         content:
-          "7 estetik tema, ambient ses karıştırıcı, nefes egzersizi ve motivasyon sözleriyle flip-clock odaklanma zamanlayıcısı.",
+          "Estetik temalar, ambient ses karıştırıcı, nefes egzersizi ve motivasyon sözleriyle flip-clock odaklanma zamanlayıcısı.",
       },
-      { property: "og:title", content: "FocusFlip — Odaklanma & Flip-Clock Zamanlayıcı" },
+      { property: "og:title", content: "Focus Heaven — Odaklanma & Flip-Clock Zamanlayıcı" },
       {
         property: "og:description",
         content:
