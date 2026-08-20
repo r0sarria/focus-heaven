@@ -74,6 +74,8 @@ export default function ScenicBackground({
       {particles.map((p) => (
         <ParticleItem key={p.id} particle={p} type={theme.particle} />
       ))}
+      {/* Ambient glow + soft dust motes while the timer is running */}
+      {active && <AmbientLayer accent={theme.accent} />}
     </div>
   );
 }
@@ -263,4 +265,65 @@ function ParticleItem({
     default:
       return null;
   }
+}
+
+function AmbientLayer({ accent }: { accent: string }) {
+  const [motes] = useState<Particle[]>(() =>
+    Array.from({ length: 22 }, (_, i) => ({
+      id: 1000 + i,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: 2 + Math.random() * 4,
+      duration: 10 + Math.random() * 12,
+      delay: Math.random() * 10,
+      drift: (Math.random() - 0.5) * 40,
+      opacity: 0.15 + Math.random() * 0.1,
+    })),
+  );
+
+  return (
+    <motion.div
+      className="absolute inset-0 pointer-events-none"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.4, ease: 'easeOut' }}
+    >
+      {/* Soft ambient glow */}
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          background: `radial-gradient(closest-side at 50% 50%, ${accent}1f, transparent 70%)`,
+        }}
+        animate={{ opacity: [0.35, 0.6, 0.35] }}
+        transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      {motes.map((p) => (
+        <motion.div
+          key={p.id}
+          className="absolute rounded-full"
+          style={{
+            left: `${p.x}%`,
+            top: `${p.y}%`,
+            width: p.size,
+            height: p.size,
+            background: accent,
+            filter: 'blur(1.5px)',
+          }}
+          animate={{
+            y: [0, -30, 0],
+            x: [0, p.drift / 2, 0],
+            opacity: [0, p.opacity, 0],
+            scale: [0.8, 1.15, 0.8],
+          }}
+          transition={{
+            duration: p.duration,
+            delay: p.delay,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+        />
+      ))}
+    </motion.div>
+  );
 }
