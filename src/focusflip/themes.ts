@@ -114,7 +114,7 @@ export const themes: Theme[] = [
       en: 'Vintage brass & warm lamp',
     },
     bgImage:
-      'https://images.unsplash.com/photo-1730248405527-393278fc4ff5?auto=format&fit=crop&w=1920&q=80',
+      'https://unsplash.com/photos/sunlight-streams-through-a-window-onto-a-bookshelf-cnRuUMK9EWI',
     overlay:
       'linear-gradient(180deg, rgba(25,16,8,0.55) 0%, rgba(18,12,6,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(60,38,22,0.88), rgba(38,24,14,0.92))',
