@@ -142,7 +142,7 @@ export const themes: Theme[] = [
       en: 'River stream & morning mist',
     },
     bgImage:
-      'https://cdn.pixabay.com/photo/2022/07/24/09/48/path-7341731_1280.jpg',
+      'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&q=80',
     overlay:
       'linear-gradient(180deg, rgba(15,26,20,0.5) 0%, rgba(10,18,14,0.65) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(35,55,40,0.85), rgba(20,36,26,0.9))',
