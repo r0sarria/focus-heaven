@@ -58,7 +58,7 @@ export const themes: Theme[] = [
       en: 'Rainy night & warm coffee',
     },
     bgImage:
-      'https://cdn.pixabay.com/photo/2024/08/23/07/55/ai-generated-9006996_1280.jpg',
+      'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80',
     overlay:
       'linear-gradient(180deg, rgba(20,14,10,0.55) 0%, rgba(15,10,7,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(60,45,35,0.85), rgba(35,25,18,0.9))',
