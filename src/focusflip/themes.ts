@@ -114,7 +114,7 @@ export const themes: Theme[] = [
       en: 'Vintage brass & warm lamp',
     },
     bgImage:
-      '/__l5e/assets-v1/1d08a520-7f01-49bf-8658-017523fd1d5f/karwin-luo-cnRuUMK9EWI-unsplash.jpg',
+      bgImage: '/library.jpg',
     overlay:
       'linear-gradient(180deg, rgba(25,16,8,0.55) 0%, rgba(18,12,6,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(60,38,22,0.88), rgba(38,24,14,0.92))',
@@ -199,7 +199,7 @@ export const themes: Theme[] = [
       en: 'Navy abyss & jellyfish',
     },
     bgImage:
-      '/__l5e/assets-v1/674c4e33-9d70-4a46-bc54-c787530e4f3b/tormius-0eAHNGWBKrM-unsplash.jpg',
+      '/ocean.jpg'',
     overlay:
       'linear-gradient(180deg, rgba(8,18,35,0.55) 0%, rgba(5,12,25,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(15,40,65,0.85), rgba(6,22,42,0.9))',
