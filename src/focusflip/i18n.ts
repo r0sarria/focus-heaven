@@ -86,7 +86,7 @@ export interface Strings {
 }
 
 const tr: Strings = {
-  appName: 'FocusFlip',
+  appName: 'Focus Heaven',
   stopwatch: 'Kronometre',
   countdown: 'Geri Sayım',
   focus: 'Odaklanma',
@@ -171,7 +171,7 @@ const tr: Strings = {
   breatheOut: 'Ver',
   startBreathing: 'Başla',
   shareCardTitle: 'Odaklanma Tamamlandı!',
-  shareCardSubtitle: 'FocusFlip ile yeni bir seans bitirdim',
+  shareCardSubtitle: 'Focus Heaven ile yeni bir seans bitirdim',
   shareFocus: 'Odak',
   share: 'Paylaş',
   download: 'İndir',
@@ -181,7 +181,7 @@ const tr: Strings = {
 };
 
 const en: Strings = {
-  appName: 'FocusFlip',
+  appName: 'Focus Heaven',
   stopwatch: 'Stopwatch',
   countdown: 'Countdown',
   focus: 'Focus',
@@ -266,7 +266,7 @@ const en: Strings = {
   breatheOut: 'Breathe Out',
   startBreathing: 'Begin',
   shareCardTitle: 'Focus Session Complete!',
-  shareCardSubtitle: 'I just finished a session with FocusFlip',
+  shareCardSubtitle: 'I just finished a session with Focus Heaven',
   shareFocus: 'Focus',
   share: 'Share',
   download: 'Download',
