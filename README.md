@@ -1,11 +1,8 @@
-# focus-heaven
-
 # ☁️ Focus Heaven
 
-
-<img width="2560" height="1440" alt="Ekran görüntüsü 2026-08-21 010741" src="https://github.com/user-attachments/assets/a45f9e9b-f72d-4a8e-828f-b01d8406a273" />
-
-
+<p align="center">
+  <img width="100%" alt="Focus Heaven Preview" src="https://github.com/user-attachments/assets/a45f9e9b-f72d-4a8e-828f-b01d8406a273" />
+</p>
 
 Focus Heaven is a minimalist, aesthetic Pomodoro and ambient sound application designed to enhance productivity and deep work sessions.
 
@@ -36,6 +33,9 @@ Focus Heaven is a minimalist, aesthetic Pomodoro and ambient sound application d
 ```bash
 # Clone the repository
 git clone [https://github.com/r0sarria/focus-heaven.git](https://github.com/r0sarria/focus-heaven.git)
+
+# Navigate to directory
+cd focus-heaven
 
 # Install dependencies
 bun install # or npm install
