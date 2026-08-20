@@ -1,24 +1,39 @@
 # focus-heaven
 
-Implement exactly the screenshot and nothing else
+# ☁️ Focus Heaven
 
-This project was built with [Lovable](https://lovable.dev).
+Focus Heaven is a minimalist, aesthetic Pomodoro and ambient sound application designed to enhance productivity and deep work sessions.
 
-## Build with Lovable
+🔗 **Live Demo:** [focus-heaven.vercel.app](https://focus-heaven.vercel.app)
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4df9d5a4-709c-4ccd-8185-34e1158fb811).
+---
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## ✨ Features
 
-## Development
+- ⏱️ **Customizable Pomodoro Timer:** Focus, short break, and long break intervals.
+- 🎨 **Minimalist & Aesthetic Themes:** Clean design with seamless theme switching.
+- 🎧 **Ambient Audio:** Built-in ambient sounds for immersive focus.
+- 📱 **Fully Responsive:** Optimized for both desktop and mobile devices.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+---
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## 🛠️ Tech Stack
+
+- **Framework:** React + Vite
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+
+---
+
+## 🚀 Getting Started Locally
+
+```bash
+# Clone the repository
+git clone [https://github.com/r0sarria/focus-heaven.git](https://github.com/r0sarria/focus-heaven.git)
+
+# Install dependencies
+bun install # or npm install
+
+# Start the dev server
+bun dev # or npm run dev
