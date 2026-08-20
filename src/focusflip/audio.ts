@@ -8,6 +8,7 @@ export type AmbientId = 'rain' | 'river' | 'wind' | 'fireplace' | 'cafe' | 'bird
 
 interface Layer {
   gain: GainNode;
+  element?: HTMLAudioElement;
   nodes: AudioNode[];
   oscillators: OscillatorNode[];
   intervals: number[];
@@ -445,6 +446,10 @@ class AudioEngine {
         try { n.disconnect(); } catch { /* noop */ }
       });
       try { layer.gain.disconnect(); } catch { /* noop */ }
+      if (layer.element) {
+        try { layer.element.pause(); } catch { /* noop */ }
+        layer.element.src = '';
+      }
     }, 500);
     delete this.ambientLayers[id];
     this.activeAmbients.delete(id);
@@ -456,6 +461,9 @@ class AudioEngine {
 
   // Pause all audio (music + ambient) by muting master gain — preserves all nodes
   pauseAll() {
+    Object.values(this.ambientLayers).forEach((l) => {
+      try { l?.element?.pause(); } catch { /* noop */ }
+    });
     if (!this.masterGain || !this.ctx) return;
     this.masterGain.gain.setTargetAtTime(0, this.ctx.currentTime, 0.1);
   }
@@ -464,6 +472,9 @@ class AudioEngine {
   resumeAll() {
     if (!this.masterGain || !this.ctx) return;
     if (this.ctx.state === 'suspended') void this.ctx.resume();
+    Object.values(this.ambientLayers).forEach((l) => {
+      if (l?.element) void l.element.play().catch(() => { /* noop */ });
+    });
     this.masterGain.gain.setTargetAtTime(this.masterVolume, this.ctx.currentTime, 0.1);
   }
 
@@ -579,36 +590,22 @@ class AudioEngine {
   }
 
   private buildFireplace(ctx: AudioContext, layer: Layer) {
-    const noise = this.createNoiseSource(ctx, 'brown');
-    const filter = ctx.createBiquadFilter();
-    filter.type = 'lowpass';
-    filter.frequency.value = 600;
-    const gain = ctx.createGain();
-    gain.gain.value = 0.08;
-    noise.connect(filter);
-    filter.connect(gain);
-    gain.connect(layer.gain);
-    noise.start();
-    layer.nodes.push(noise, filter, gain);
-
-    // Crackle pops
-    const id = window.setInterval(() => {
-      if (!this.activeAmbients.has('fireplace')) return;
-      const osc = ctx.createOscillator();
-      osc.type = 'square';
-      osc.frequency.value = 60 + Math.random() * 100;
+    const el = new Audio('https://actions.google.com/sounds/v1/ambiences/fire.ogg');
+    el.crossOrigin = 'anonymous';
+    el.loop = true;
+    el.preload = 'auto';
+    try {
+      const src = ctx.createMediaElementSource(el);
       const g = ctx.createGain();
-      g.gain.setValueAtTime(0, ctx.currentTime);
-      g.gain.linearRampToValueAtTime(0.04 + Math.random() * 0.03, ctx.currentTime + 0.005);
-      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.05);
-      osc.connect(g);
+      g.gain.value = 0.9;
+      src.connect(g);
       g.connect(layer.gain);
-      osc.start();
-      osc.stop(ctx.currentTime + 0.06);
-      layer.oscillators.push(osc);
-      layer.nodes.push(g);
-    }, 250);
-    layer.intervals.push(id);
+      layer.nodes.push(src as unknown as AudioNode, g);
+    } catch {
+      /* fall back to direct element playback */
+    }
+    layer.element = el;
+    void el.play().catch(() => { /* awaiting user gesture */ });
   }
 
   private buildCafe(ctx: AudioContext, layer: Layer) {

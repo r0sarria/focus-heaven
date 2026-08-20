@@ -121,7 +121,7 @@ export default function App() {
   const [controlsVisible, setControlsVisible] = useState(true);
   const [completedDuration, setCompletedDuration] = useState(0);
 
-  const theme = themeMap[settings.themeId];
+  const theme = themeMap[settings.themeId] ?? themeMap.lofi;
   const t = translations[settings.lang];
   const intervalRef = useRef<number | null>(null);
   const quoteTimerRef = useRef<number | null>(null);
