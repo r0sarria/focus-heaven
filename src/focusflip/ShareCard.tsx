@@ -86,7 +86,7 @@ export default function ShareCard({
     // App name
     ctx.fillStyle = theme.digitColor;
     ctx.font = 'bold 44px sans-serif';
-    ctx.fillText('FocusFlip', 540, 1800);
+    ctx.fillText('Focus Heaven', 540, 1800);
 
     // Download
     canvas.toBlob((blob) => {
@@ -94,7 +94,7 @@ export default function ShareCard({
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'focusflip-share.png';
+      a.download = 'focusheaven-share.png';
       a.click();
       URL.revokeObjectURL(url);
     });
@@ -139,11 +139,11 @@ export default function ShareCard({
     ctx.fillText(`${t.todayMinutes}: ${todayMinutes} ${t.minutesUnit}`, 540, 1120);
     ctx.fillStyle = theme.digitColor;
     ctx.font = 'bold 44px sans-serif';
-    ctx.fillText('FocusFlip', 540, 1800);
+    ctx.fillText('Focus Heaven', 540, 1800);
 
     canvas.toBlob(async (blob) => {
       if (!blob) return;
-      const file = new File([blob], 'focusflip-share.png', { type: 'image/png' });
+      const file = new File([blob], 'focusheaven-share.png', { type: 'image/png' });
       if (navigator.share && navigator.canShare?.({ files: [file] })) {
         try {
           await navigator.share({ files: [file], title: t.shareCardTitle, text: t.shareCardSubtitle });
@@ -218,7 +218,7 @@ export default function ShareCard({
               <span>{t.todayMinutes}: {todayMinutes} {t.minutesUnit}</span>
             </div>
             <div className="mt-6 text-sm font-bold" style={{ color: theme.digitColor }}>
-              FocusFlip
+              Focus Heaven
             </div>
           </div>
         </div>
