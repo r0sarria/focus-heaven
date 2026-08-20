@@ -23,7 +23,13 @@ const PARTICLE_COUNTS: Record<ParticleType, number> = {
   jellies: 6,
 };
 
-export default function ScenicBackground({ theme }: { theme: Theme }) {
+export default function ScenicBackground({
+  theme,
+  active = false,
+}: {
+  theme: Theme;
+  active?: boolean;
+}) {
   const [particles, setParticles] = useState<Particle[]>([]);
   const [bgLoaded, setBgLoaded] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
