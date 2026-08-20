@@ -86,7 +86,7 @@ export const themes: Theme[] = [
       en: 'Neon rain & synth skyline',
     },
     bgImage:
-      'https://cdn.pixabay.com/photo/2024/05/26/14/19/anime-8788959_1280.jpg',
+      'https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?auto=format&fit=crop&w=1920&q=80',
     overlay:
       'linear-gradient(180deg, rgba(5,2,16,0.6) 0%, rgba(8,3,24,0.75) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(20,20,40,0.85), rgba(8,8,22,0.9))',
