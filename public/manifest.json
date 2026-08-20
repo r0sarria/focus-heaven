@@ -1,0 +1,22 @@
+{
+  "name": "FocusFlip - Odaklanma & Flip-Clock",
+  "short_name": "FocusFlip",
+  "description": "Aesthetic flip-clock & ambient timer with 7 curated themes",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='%230a0a0f'/%3E%3Crect x='40' y='50' width='50' height='92' rx='8' fill='%23f5e6d3'/%3E%3Crect x='102' y='50' width='50' height='92' rx='8' fill='%23f5e6d3'/%3E%3Crect x='40' y='96' width='50' height='2' fill='%23000'/%3E%3Crect x='102' y='96' width='50' height='2' fill='%23000'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%230a0a0f'/%3E%3Crect x='100' y='130' width='140' height='252' rx='16' fill='%23f5e6d3'/%3E%3Crect x='272' y='130' width='140' height='252' rx='16' fill='%23f5e6d3'/%3E%3Crect x='100' y='256' width='140' height='4' fill='%23000'/%3E%3Crect x='272' y='256' width='140' height='4' fill='%23000'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
