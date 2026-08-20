@@ -289,7 +289,7 @@ class AudioEngine {
     let idx = 0;
     const id = window.setInterval(() => {
       if (!this.musicPlaying) return;
-      const freq = notes[idx % notes.length];
+      const freq = notes[idx % notes.length]!;
       idx++;
       // Plucked string simulation
       const osc = ctx.createOscillator();
