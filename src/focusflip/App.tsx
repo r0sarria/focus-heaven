@@ -79,7 +79,7 @@ function loadStreak(): StreakData {
     const raw = localStorage.getItem(STREAK_KEY);
     if (raw) return JSON.parse(raw);
   } catch { /* noop */ }
-  const today = new Date().toISOString().split('T')[0];
+  const today = new Date().toISOString().split('T')[0]!;
   return { lastActiveDate: '', currentStreak: 0, todayMinutes: 0, todayDate: today };
 }
 
@@ -246,7 +246,7 @@ export default function App() {
     const intervalMs = settings.quoteIntervalMin * 60 * 1000;
     quoteTimerRef.current = window.setInterval(() => {
       const quotes = translations[settings.lang].quotes;
-      setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
+      setQuote(quotes[Math.floor(Math.random() * quotes.length)] ?? null);
       setTimeout(() => setQuote(null), 6000);
     }, intervalMs);
     return () => { if (quoteTimerRef.current) { clearInterval(quoteTimerRef.current); quoteTimerRef.current = null; } };
@@ -278,7 +278,7 @@ export default function App() {
   }, [running]);
 
   const updateStreakOnComplete = (durationMin: number) => {
-    const today = new Date().toISOString().split('T')[0];
+    const today = new Date().toISOString().split('T')[0]!;
     setStreakData((prev) => {
       let newStreak = prev.currentStreak;
       let todayMin = prev.todayMinutes;

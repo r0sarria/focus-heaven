@@ -157,7 +157,7 @@ class AudioEngine {
 
     const playChord = () => {
       if (!this.musicPlaying) return;
-      const chord = chords[chordIndex % chords.length];
+      const chord = chords[chordIndex % chords.length]!;
       chordIndex++;
       chord.forEach((freq) => {
         const osc = ctx.createOscillator();
@@ -185,7 +185,7 @@ class AudioEngine {
     let melIdx = 0;
     const melId = window.setInterval(() => {
       if (!this.musicPlaying || Math.random() > 0.6) return;
-      const freq = melodyNotes[melIdx % melodyNotes.length];
+      const freq = melodyNotes[melIdx % melodyNotes.length]!;
       melIdx++;
       const osc = ctx.createOscillator();
       osc.type = 'triangle';
@@ -240,7 +240,7 @@ class AudioEngine {
     let arpIdx = 0;
     const arpId = window.setInterval(() => {
       if (!this.musicPlaying) return;
-      const freq = arpNotes[arpIdx % arpNotes.length];
+      const freq = arpNotes[arpIdx % arpNotes.length]!;
       arpIdx++;
       const osc = ctx.createOscillator();
       osc.type = 'square';
@@ -348,7 +348,7 @@ class AudioEngine {
     const bellId = window.setInterval(() => {
       if (!this.musicPlaying || Math.random() > 0.4) return;
       const freqs = [523.25, 659.25, 783.99];
-      const freq = freqs[Math.floor(Math.random() * freqs.length)];
+      const freq = freqs[Math.floor(Math.random() * freqs.length)]!;
       const osc = ctx.createOscillator();
       osc.type = 'sine';
       osc.frequency.value = freq;
@@ -710,8 +710,8 @@ class AudioEngine {
       for (let i = 0; i < bufferSize; i++) {
         const white = Math.random() * 2 - 1;
         data[i] = (lastOut + 0.02 * white) / 1.02;
-        lastOut = data[i];
-        data[i] *= 3.5;
+        lastOut = data[i]!;
+        data[i] = data[i]! * 3.5;
       }
     }
     const src = ctx.createBufferSource();

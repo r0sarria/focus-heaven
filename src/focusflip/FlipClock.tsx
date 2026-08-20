@@ -23,6 +23,7 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
       const t = setTimeout(() => setFlipping(false), 600);
       return () => clearTimeout(t);
     }
+    return undefined;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
 

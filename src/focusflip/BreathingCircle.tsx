@@ -39,7 +39,7 @@ export default function BreathingCircle({ theme, t, lang, onClose }: Props) {
         setCycle(cycleCount);
         idx = 0;
       }
-      const p = phases[idx];
+      const p = phases[idx]!;
       setPhase(p);
       playPhaseTone(p);
       idx++;
