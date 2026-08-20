@@ -199,7 +199,7 @@ export const themes: Theme[] = [
       en: 'Navy abyss & jellyfish',
     },
     bgImage:
-      'https://unsplash.com/photos/a-group-of-jellyfish-swimming-in-the-water-0eAHNGWBKrM',
+      '/__l5e/assets-v1/674c4e33-9d70-4a46-bc54-c787530e4f3b/tormius-0eAHNGWBKrM-unsplash.jpg',
     overlay:
       'linear-gradient(180deg, rgba(8,18,35,0.55) 0%, rgba(5,12,25,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(15,40,65,0.85), rgba(6,22,42,0.9))',
