@@ -1,10 +1,9 @@
 export type ThemeId =
   | 'lofi'
-  | 'capybara'
   | 'cyberpunk'
   | 'library'
   | 'botanical'
-  | 'fairy'
+  | 'pembe'
   | 'ocean';
 
 export type ParticleType =
@@ -78,34 +77,6 @@ export const themes: Theme[] = [
     defaultMusic: 'lofi',
     font: "'DM Serif Display', 'Georgia', serif",
     fontWeight: 400,
-  },
-  {
-    id: 'capybara',
-    name: { tr: 'Tatlı Kapibara', en: 'Cozy Capybara' },
-    tagline: {
-      tr: 'Y2K pastel & yuzu banyosu',
-      en: 'Y2K pastel & yuzu bath',
-    },
-    bgImage:
-      'https://images.pexels.com/photos/30759483/pexels-photo-30759483.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    overlay:
-      'linear-gradient(180deg, rgba(30,22,16,0.5) 0%, rgba(25,18,12,0.65) 100%)',
-    cardBg: 'linear-gradient(180deg, rgba(65,48,32,0.85), rgba(40,30,20,0.9))',
-    cardBgTop: 'linear-gradient(180deg, rgba(80,60,40,0.9) 0%, rgba(50,38,26,0.9) 100%)',
-    cardBgBottom: 'linear-gradient(180deg, rgba(32,24,16,0.9) 0%, rgba(55,42,28,0.85) 100%)',
-    cardBorder: '1px solid rgba(255,180,90,0.18)',
-    cardShadow: '0 10px 30px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,210,150,0.1)',
-    cardGlow: '0 0 25px rgba(255,180,90,0.18)',
-    cardRounded: 'rounded-2xl',
-    digitColor: '#ffd9a0',
-    digitShadow: '0 2px 4px rgba(0,0,0,0.4)',
-    labelColor: 'rgba(255,180,90,0.6)',
-    accent: '#ffb454',
-    accentSoft: 'rgba(255,180,84,0.12)',
-    particle: 'bubbles',
-    defaultMusic: 'lofi',
-    font: "'Outfit', 'Segoe UI', sans-serif",
-    fontWeight: 700,
   },
   {
     id: 'cyberpunk',
