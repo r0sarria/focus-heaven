@@ -21,11 +21,8 @@ export interface Theme {
   id: ThemeId;
   name: { tr: string; en: string };
   tagline: { tr: string; en: string };
-  // Scenic background image (Pexels)
   bgImage: string;
-  // Scenic background image (Unsplash)
   overlay: string;
-  // Flip card styling
   cardBg: string;
   cardBgTop: string;
   cardBgBottom: string;
@@ -33,18 +30,13 @@ export interface Theme {
   cardShadow: string;
   cardGlow: string;
   cardRounded: string;
-  // Text
   digitColor: string;
   digitShadow: string;
   labelColor: string;
-  // Accents
   accent: string;
   accentSoft: string;
-  // Particles
   particle: ParticleType;
-  // Default music genre
   defaultMusic: MusicGenre;
-  // Font
   font: string;
   fontWeight: number;
 }
@@ -91,7 +83,7 @@ export const themes: Theme[] = [
       'linear-gradient(180deg, rgba(5,2,16,0.6) 0%, rgba(8,3,24,0.75) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(20,20,40,0.85), rgba(8,8,22,0.9))',
     cardBgTop: 'linear-gradient(180deg, rgba(30,30,55,0.9) 0%, rgba(12,12,28,0.9) 100%)',
-    cardBgBottom: 'linear-gradient(180deg, rgba(6,6,16,0.9) 0%, rgba(20,20,42,0.85) 100%)',
+    cardBgBottom: 'linear-gradient(180deg, rgba(60,6,16,0.9) 0%, rgba(20,20,42,0.85) 100%)',
     cardBorder: '1px solid rgba(34,211,238,0.35)',
     cardShadow: '0 0 25px rgba(34,211,238,0.12), inset 0 0 30px rgba(217,70,239,0.06)',
     cardGlow: '0 0 20px rgba(34,211,238,0.4)',
@@ -113,8 +105,7 @@ export const themes: Theme[] = [
       tr: 'Antika brass & sıcak lamba',
       en: 'Vintage brass & warm lamp',
     },
-    bgImage:
-      bgImage: '/library.jpg',
+    bgImage: '/library.jpg',
     overlay:
       'linear-gradient(180deg, rgba(25,16,8,0.55) 0%, rgba(18,12,6,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(60,38,22,0.88), rgba(38,24,14,0.92))',
@@ -189,7 +180,6 @@ export const themes: Theme[] = [
     defaultMusic: 'zen',
     font: "'Outfit', 'Segoe UI', sans-serif",
     fontWeight: 700,
-
   },
   {
     id: 'ocean',
@@ -198,8 +188,7 @@ export const themes: Theme[] = [
       tr: 'Lacivert derinlik & denizanaları',
       en: 'Navy abyss & jellyfish',
     },
-    bgImage:
-      '/ocean.jpg'',
+    bgImage: '/ocean.jpg',
     overlay:
       'linear-gradient(180deg, rgba(8,18,35,0.55) 0%, rgba(5,12,25,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(15,40,65,0.85), rgba(6,22,42,0.9))',
