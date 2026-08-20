@@ -170,7 +170,7 @@ export const themes: Theme[] = [
       en: 'Pink sunset & soft shimmer',
     },
     bgImage:
-      'https://cdn.pixabay.com/photo/2019/03/28/22/13/sunset-4086848_1280.jpg',
+      'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1920&q=80',
     overlay:
       'linear-gradient(180deg, rgba(60,20,45,0.42) 0%, rgba(35,10,28,0.6) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(90,40,70,0.85), rgba(55,22,45,0.9))',
