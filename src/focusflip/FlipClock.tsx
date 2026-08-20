@@ -40,8 +40,9 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
 
   const fontSize =
     size === 'large'
-      ? 'text-[clamp(3rem,9vw,7rem)] sm:text-[clamp(4rem,12vw,9.5rem)] md:text-[clamp(4.5rem,10vw,11rem)]'
-      : 'text-[clamp(2.2rem,7vw,5rem)] sm:text-[clamp(2.8rem,9vw,6.5rem)] md:text-[clamp(3.2rem,8vw,7.5rem)]';
+      ? 'text-[clamp(2.4rem,7vw,5.6rem)] sm:text-[clamp(3.2rem,9.5vw,7.5rem)] md:text-[clamp(3.6rem,8vw,8.6rem)]'
+      : 'text-[clamp(1.8rem,5.5vw,4rem)] sm:text-[clamp(2.2rem,7vw,5.2rem)] md:text-[clamp(2.6rem,6.2vw,6rem)]';
+
 
   return (
     <div className="flex flex-col items-center gap-2 select-none">
@@ -69,7 +70,7 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
           style={{ background: theme.cardBgTop }}
         >
           <span
-            className={`font-bold leading-none ${fontSize}`}
+            className={`font-bold leading-none tabular-nums tracking-[0.06em] px-3 ${fontSize}`}
             style={{
               color: theme.digitColor,
               textShadow: theme.digitShadow,
@@ -88,7 +89,7 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
           style={{ background: theme.cardBgBottom }}
         >
           <span
-            className={`font-bold leading-none ${fontSize}`}
+            className={`font-bold leading-none tabular-nums tracking-[0.06em] px-3 ${fontSize}`}
             style={{
               color: theme.digitColor,
               textShadow: theme.digitShadow,
@@ -112,7 +113,7 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
               transition={{ duration: 0.3, ease: 'easeIn' }}
             >
               <span
-                className={`font-bold leading-none ${fontSize}`}
+                className={`font-bold leading-none tabular-nums tracking-[0.06em] px-3 ${fontSize}`}
                 style={{
                   color: theme.digitColor,
                   textShadow: theme.digitShadow,
@@ -142,7 +143,7 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
               transition={{ duration: 0.3, ease: 'easeOut', delay: 0.3 }}
             >
               <span
-                className={`font-bold leading-none ${fontSize}`}
+                className={`font-bold leading-none tabular-nums tracking-[0.06em] px-3 ${fontSize}`}
                 style={{
                   color: theme.digitColor,
                   textShadow: theme.digitShadow,
@@ -189,7 +190,7 @@ export default function FlipClock({
   const colonSize = 'text-[clamp(2.5rem,8vw,6rem)] sm:text-[clamp(3rem,10vw,8rem)] md:text-[clamp(3.5rem,9vw,9rem)]';
 
   return (
-    <div className="flex items-center justify-center gap-1.5 sm:gap-2.5 md:gap-3.5">
+    <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6">
       <FlipUnit value={hours} label={strings.h} theme={theme} size="large" />
       <div className="flex items-center justify-center pb-8">
         <span

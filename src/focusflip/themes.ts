@@ -1,10 +1,9 @@
 export type ThemeId =
   | 'lofi'
-  | 'capybara'
   | 'cyberpunk'
   | 'library'
   | 'botanical'
-  | 'fairy'
+  | 'pembe'
   | 'ocean';
 
 export type ParticleType =
@@ -59,7 +58,7 @@ export const themes: Theme[] = [
       en: 'Rainy night & warm coffee',
     },
     bgImage:
-      'https://images.pexels.com/photos/30107913/pexels-photo-30107913.png?auto=compress&cs=tinysrgb&w=1920',
+      'https://cdn.pixabay.com/photo/2024/08/23/07/55/ai-generated-9006996_1280.jpg',
     overlay:
       'linear-gradient(180deg, rgba(20,14,10,0.55) 0%, rgba(15,10,7,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(60,45,35,0.85), rgba(35,25,18,0.9))',
@@ -80,34 +79,6 @@ export const themes: Theme[] = [
     fontWeight: 400,
   },
   {
-    id: 'capybara',
-    name: { tr: 'Tatlı Kapibara', en: 'Cozy Capybara' },
-    tagline: {
-      tr: 'Y2K pastel & yuzu banyosu',
-      en: 'Y2K pastel & yuzu bath',
-    },
-    bgImage:
-      'https://images.pexels.com/photos/30759483/pexels-photo-30759483.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    overlay:
-      'linear-gradient(180deg, rgba(30,22,16,0.5) 0%, rgba(25,18,12,0.65) 100%)',
-    cardBg: 'linear-gradient(180deg, rgba(65,48,32,0.85), rgba(40,30,20,0.9))',
-    cardBgTop: 'linear-gradient(180deg, rgba(80,60,40,0.9) 0%, rgba(50,38,26,0.9) 100%)',
-    cardBgBottom: 'linear-gradient(180deg, rgba(32,24,16,0.9) 0%, rgba(55,42,28,0.85) 100%)',
-    cardBorder: '1px solid rgba(255,180,90,0.18)',
-    cardShadow: '0 10px 30px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,210,150,0.1)',
-    cardGlow: '0 0 25px rgba(255,180,90,0.18)',
-    cardRounded: 'rounded-2xl',
-    digitColor: '#ffd9a0',
-    digitShadow: '0 2px 4px rgba(0,0,0,0.4)',
-    labelColor: 'rgba(255,180,90,0.6)',
-    accent: '#ffb454',
-    accentSoft: 'rgba(255,180,84,0.12)',
-    particle: 'bubbles',
-    defaultMusic: 'lofi',
-    font: "'Outfit', 'Segoe UI', sans-serif",
-    fontWeight: 700,
-  },
-  {
     id: 'cyberpunk',
     name: { tr: 'Siber Şehir', en: 'Cyberpunk City' },
     tagline: {
@@ -115,7 +86,7 @@ export const themes: Theme[] = [
       en: 'Neon rain & synth skyline',
     },
     bgImage:
-      'https://images.pexels.com/photos/35171253/pexels-photo-35171253.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://cdn.pixabay.com/photo/2024/05/26/14/19/anime-8788959_1280.jpg',
     overlay:
       'linear-gradient(180deg, rgba(5,2,16,0.6) 0%, rgba(8,3,24,0.75) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(20,20,40,0.85), rgba(8,8,22,0.9))',
@@ -126,13 +97,13 @@ export const themes: Theme[] = [
     cardGlow: '0 0 20px rgba(34,211,238,0.4)',
     cardRounded: 'rounded-xl',
     digitColor: '#22d3ee',
-    digitShadow: '0 0 14px rgba(34,211,238,0.6), 0 0 28px rgba(217,70,239,0.3)',
+    digitShadow: '0 0 10px rgba(34,211,238,0.35)',
     labelColor: 'rgba(217,70,239,0.7)',
     accent: '#22d3ee',
     accentSoft: 'rgba(34,211,238,0.12)',
     particle: 'motes',
     defaultMusic: 'synthwave',
-    font: "'Orbitron', 'Courier New', monospace",
+    font: "'Outfit', 'Segoe UI', sans-serif",
     fontWeight: 700,
   },
   {
@@ -171,7 +142,7 @@ export const themes: Theme[] = [
       en: 'River stream & morning mist',
     },
     bgImage:
-      'https://images.pexels.com/photos/17366871/pexels-photo-17366871.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://cdn.pixabay.com/photo/2022/07/24/09/48/path-7341731_1280.jpg',
     overlay:
       'linear-gradient(180deg, rgba(15,26,20,0.5) 0%, rgba(10,18,14,0.65) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(35,55,40,0.85), rgba(20,36,26,0.9))',
@@ -192,32 +163,33 @@ export const themes: Theme[] = [
     fontWeight: 700,
   },
   {
-    id: 'fairy',
-    name: { tr: 'Peri Bahçesi', en: 'Fairy Twilight' },
+    id: 'pembe',
+    name: { tr: 'Pembe', en: 'Pink Aesthetic' },
     tagline: {
-      tr: 'Mor şafak & peri tozu',
-      en: 'Purple dusk & fairy dust',
+      tr: 'Pembe gün batımı & yumuşak parıltı',
+      en: 'Pink sunset & soft shimmer',
     },
     bgImage:
-      'https://images.pexels.com/photos/963320/pexels-photo-963320.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://cdn.pixabay.com/photo/2019/03/28/22/13/sunset-4086848_1280.jpg',
     overlay:
-      'linear-gradient(180deg, rgba(25,18,45,0.5) 0%, rgba(15,10,30,0.65) 100%)',
-    cardBg: 'linear-gradient(180deg, rgba(45,35,70,0.85), rgba(28,22,50,0.9))',
-    cardBgTop: 'linear-gradient(180deg, rgba(55,42,85,0.9) 0%, rgba(36,28,62,0.9) 100%)',
-    cardBgBottom: 'linear-gradient(180deg, rgba(22,16,42,0.9) 0%, rgba(40,30,66,0.85) 100%)',
-    cardBorder: '1px solid rgba(196,181,253,0.22)',
-    cardShadow: '0 10px 30px rgba(10,5,25,0.5), inset 0 0 30px rgba(196,181,253,0.05)',
-    cardGlow: '0 0 25px rgba(196,181,253,0.22)',
+      'linear-gradient(180deg, rgba(60,20,45,0.42) 0%, rgba(35,10,28,0.6) 100%)',
+    cardBg: 'linear-gradient(180deg, rgba(90,40,70,0.85), rgba(55,22,45,0.9))',
+    cardBgTop: 'linear-gradient(180deg, rgba(110,50,85,0.9) 0%, rgba(70,30,55,0.9) 100%)',
+    cardBgBottom: 'linear-gradient(180deg, rgba(45,18,38,0.9) 0%, rgba(80,36,62,0.85) 100%)',
+    cardBorder: '1px solid rgba(255,182,214,0.28)',
+    cardShadow: '0 10px 30px rgba(40,8,30,0.5), inset 0 0 30px rgba(255,182,214,0.06)',
+    cardGlow: '0 0 25px rgba(255,182,214,0.25)',
     cardRounded: 'rounded-2xl',
-    digitColor: '#e9d5ff',
-    digitShadow: '0 0 12px rgba(196,181,253,0.45)',
-    labelColor: 'rgba(196,181,253,0.6)',
-    accent: '#c4b5fd',
-    accentSoft: 'rgba(196,181,253,0.12)',
+    digitColor: '#ffe3f1',
+    digitShadow: '0 0 12px rgba(255,150,200,0.45)',
+    labelColor: 'rgba(255,182,214,0.65)',
+    accent: '#ff8ec4',
+    accentSoft: 'rgba(255,142,196,0.14)',
     particle: 'stars',
     defaultMusic: 'zen',
-    font: "'Cormorant Garamond', 'Georgia', serif",
+    font: "'Outfit', 'Segoe UI', sans-serif",
     fontWeight: 700,
+
   },
   {
     id: 'ocean',
@@ -227,7 +199,7 @@ export const themes: Theme[] = [
       en: 'Navy abyss & jellyfish',
     },
     bgImage:
-      'https://images.pexels.com/photos/33666774/pexels-photo-33666774.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://cdn.pixabay.com/photo/2019/03/24/15/34/medusa-4076713_1280.jpg',
     overlay:
       'linear-gradient(180deg, rgba(8,18,35,0.55) 0%, rgba(5,12,25,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(15,40,65,0.85), rgba(6,22,42,0.9))',
