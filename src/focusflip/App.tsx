@@ -372,7 +372,7 @@ export default function App() {
       style={{ fontFamily: theme.font }}
       onPointerDown={handleScreenTap}
     >
-      <ScenicBackground theme={theme} />
+      <ScenicBackground theme={theme} active={running} />
 
       {/* Top bar */}
       <div

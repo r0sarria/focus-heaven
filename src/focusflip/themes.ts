@@ -52,7 +52,7 @@ export interface Theme {
 export const themes: Theme[] = [
   {
     id: 'lofi',
-    name: { tr: 'Lo-Fi Kafe', en: 'Lo-Fi Cafe' },
+    name: { tr: 'Kafe', en: 'Cafe' },
     tagline: {
       tr: 'Yağmurlu gece & sıcak kahve',
       en: 'Rainy night & warm coffee',
@@ -114,7 +114,7 @@ export const themes: Theme[] = [
       en: 'Vintage brass & warm lamp',
     },
     bgImage:
-      'https://images.unsplash.com/photo-1507842229452-772b1c9c8d33?auto=format&fit=crop&w=1920&q=80',
+      'https://images.unsplash.com/photo-1730248405527-393278fc4ff5?auto=format&fit=crop&w=1920&q=80',
     overlay:
       'linear-gradient(180deg, rgba(25,16,8,0.55) 0%, rgba(18,12,6,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(60,38,22,0.88), rgba(38,24,14,0.92))',
@@ -170,7 +170,7 @@ export const themes: Theme[] = [
       en: 'Pink sunset & soft shimmer',
     },
     bgImage:
-      'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1920&q=80',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80',
     overlay:
       'linear-gradient(180deg, rgba(60,20,45,0.42) 0%, rgba(35,10,28,0.6) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(90,40,70,0.85), rgba(55,22,45,0.9))',
