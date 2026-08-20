@@ -58,7 +58,7 @@ export const themes: Theme[] = [
       en: 'Rainy night & warm coffee',
     },
     bgImage:
-      'https://images.pexels.com/photos/30107913/pexels-photo-30107913.png?auto=compress&cs=tinysrgb&w=1920',
+      'https://cdn.pixabay.com/photo/2024/08/23/07/55/ai-generated-9006996_1280.jpg',
     overlay:
       'linear-gradient(180deg, rgba(20,14,10,0.55) 0%, rgba(15,10,7,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(60,45,35,0.85), rgba(35,25,18,0.9))',
@@ -86,7 +86,7 @@ export const themes: Theme[] = [
       en: 'Neon rain & synth skyline',
     },
     bgImage:
-      'https://images.pexels.com/photos/35171253/pexels-photo-35171253.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://cdn.pixabay.com/photo/2024/05/26/14/19/anime-8788959_1280.jpg',
     overlay:
       'linear-gradient(180deg, rgba(5,2,16,0.6) 0%, rgba(8,3,24,0.75) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(20,20,40,0.85), rgba(8,8,22,0.9))',
@@ -97,13 +97,13 @@ export const themes: Theme[] = [
     cardGlow: '0 0 20px rgba(34,211,238,0.4)',
     cardRounded: 'rounded-xl',
     digitColor: '#22d3ee',
-    digitShadow: '0 0 14px rgba(34,211,238,0.6), 0 0 28px rgba(217,70,239,0.3)',
+    digitShadow: '0 0 10px rgba(34,211,238,0.35)',
     labelColor: 'rgba(217,70,239,0.7)',
     accent: '#22d3ee',
     accentSoft: 'rgba(34,211,238,0.12)',
     particle: 'motes',
     defaultMusic: 'synthwave',
-    font: "'Orbitron', 'Courier New', monospace",
+    font: "'Outfit', 'Segoe UI', sans-serif",
     fontWeight: 700,
   },
   {
@@ -142,7 +142,7 @@ export const themes: Theme[] = [
       en: 'River stream & morning mist',
     },
     bgImage:
-      'https://images.pexels.com/photos/17366871/pexels-photo-17366871.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://cdn.pixabay.com/photo/2022/07/24/09/48/path-7341731_1280.jpg',
     overlay:
       'linear-gradient(180deg, rgba(15,26,20,0.5) 0%, rgba(10,18,14,0.65) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(35,55,40,0.85), rgba(20,36,26,0.9))',
@@ -199,7 +199,7 @@ export const themes: Theme[] = [
       en: 'Navy abyss & jellyfish',
     },
     bgImage:
-      'https://images.pexels.com/photos/33666774/pexels-photo-33666774.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      'https://cdn.pixabay.com/photo/2019/03/24/15/34/medusa-4076713_1280.jpg',
     overlay:
       'linear-gradient(180deg, rgba(8,18,35,0.55) 0%, rgba(5,12,25,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(15,40,65,0.85), rgba(6,22,42,0.9))',
