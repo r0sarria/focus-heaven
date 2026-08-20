@@ -114,7 +114,7 @@ export const themes: Theme[] = [
       en: 'Vintage brass & warm lamp',
     },
     bgImage:
-      'https://unsplash.com/photos/sunlight-streams-through-a-window-onto-a-bookshelf-cnRuUMK9EWI',
+      '/__l5e/assets-v1/1d08a520-7f01-49bf-8658-017523fd1d5f/karwin-luo-cnRuUMK9EWI-unsplash.jpg',
     overlay:
       'linear-gradient(180deg, rgba(25,16,8,0.55) 0%, rgba(18,12,6,0.7) 100%)',
     cardBg: 'linear-gradient(180deg, rgba(60,38,22,0.88), rgba(38,24,14,0.92))',
