@@ -40,8 +40,9 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
 
   const fontSize =
     size === 'large'
-      ? 'text-[clamp(3rem,9vw,7rem)] sm:text-[clamp(4rem,12vw,9.5rem)] md:text-[clamp(4.5rem,10vw,11rem)]'
-      : 'text-[clamp(2.2rem,7vw,5rem)] sm:text-[clamp(2.8rem,9vw,6.5rem)] md:text-[clamp(3.2rem,8vw,7.5rem)]';
+      ? 'text-[clamp(2.4rem,7vw,5.6rem)] sm:text-[clamp(3.2rem,9.5vw,7.5rem)] md:text-[clamp(3.6rem,8vw,8.6rem)]'
+      : 'text-[clamp(1.8rem,5.5vw,4rem)] sm:text-[clamp(2.2rem,7vw,5.2rem)] md:text-[clamp(2.6rem,6.2vw,6rem)]';
+
 
   return (
     <div className="flex flex-col items-center gap-2 select-none">
