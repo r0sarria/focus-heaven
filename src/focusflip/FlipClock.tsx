@@ -70,7 +70,7 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
           style={{ background: theme.cardBgTop }}
         >
           <span
-            className={`font-bold leading-none ${fontSize}`}
+            className={`font-bold leading-none tabular-nums tracking-[0.06em] px-3 ${fontSize}`}
             style={{
               color: theme.digitColor,
               textShadow: theme.digitShadow,
@@ -89,7 +89,7 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
           style={{ background: theme.cardBgBottom }}
         >
           <span
-            className={`font-bold leading-none ${fontSize}`}
+            className={`font-bold leading-none tabular-nums tracking-[0.06em] px-3 ${fontSize}`}
             style={{
               color: theme.digitColor,
               textShadow: theme.digitShadow,
@@ -113,7 +113,7 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
               transition={{ duration: 0.3, ease: 'easeIn' }}
             >
               <span
-                className={`font-bold leading-none ${fontSize}`}
+                className={`font-bold leading-none tabular-nums tracking-[0.06em] px-3 ${fontSize}`}
                 style={{
                   color: theme.digitColor,
                   textShadow: theme.digitShadow,
@@ -143,7 +143,7 @@ function FlipUnit({ value, label, theme, size }: FlipUnitProps) {
               transition={{ duration: 0.3, ease: 'easeOut', delay: 0.3 }}
             >
               <span
-                className={`font-bold leading-none ${fontSize}`}
+                className={`font-bold leading-none tabular-nums tracking-[0.06em] px-3 ${fontSize}`}
                 style={{
                   color: theme.digitColor,
                   textShadow: theme.digitShadow,
@@ -190,7 +190,7 @@ export default function FlipClock({
   const colonSize = 'text-[clamp(2.5rem,8vw,6rem)] sm:text-[clamp(3rem,10vw,8rem)] md:text-[clamp(3.5rem,9vw,9rem)]';
 
   return (
-    <div className="flex items-center justify-center gap-1.5 sm:gap-2.5 md:gap-3.5">
+    <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6">
       <FlipUnit value={hours} label={strings.h} theme={theme} size="large" />
       <div className="flex items-center justify-center pb-8">
         <span
